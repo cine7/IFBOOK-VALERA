@@ -1,0 +1,30 @@
+@model IFBOOK_VALERA.Models.Publicacao
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+<meta charset="utf-8" />
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Publicação</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DataPublicacao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataPublicacao)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>
