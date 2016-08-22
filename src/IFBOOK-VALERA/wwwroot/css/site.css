@@ -1,6 +1,20 @@
-﻿body {
+﻿@font-face{
+	font-family: bebas;
+	src: url("fontes/BebasKai.otf");
+    src: local("bebas"), url("font/bebaskai-webfont.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: amble;
+	src: url("fontes/Amble.otf");
+    src: local("amble"), url("font/amble-webfont.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #e9eaed;
 }
 
 /* Wrapping element */
@@ -47,4 +61,39 @@ textarea {
   .carousel-caption {
     display: none
   }
+}
+
+/* Cabeçalho */
+
+.navbar, .navbar-inverse, .navbar-fixed-top{
+    background-color: black;
+}
+
+/* Login */
+
+h2{
+    text-align: center;
+    font-size: 55pt;
+    font-family: bebas;
+}
+
+.form-control{
+    display: inline;
+    border: solid 1px black;
+    height: 27px;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    padding-left: 18px;
+    font-size: 18.7pt;
+    font-family: amble;
+}
+
+.col-md-12{
+    text-align: center;
+}
+
+::-webkit-input-placeholder{
+	font-family: bebas;
+	font-size: 20pt;
+    padding-left: 12px;
 }
