@@ -17,13 +17,11 @@ namespace IFBOOK_VALERA.Models
         [Display(Name = "Conteudo")]
         [MaxLength(500)]
         public string descricao { get; set; }
-        [Required]
+        public string UserId { get; set; }
         public ApplicationUser Usuario { get; set; }
         [Column(TypeName = "Date")]
         public DateTime DataComentario { get; set; }
-        [Required]
         public int PublicacaoId { get; set; }
-        [Required]
         public Publicacao publicacao { get; set; }
     }
 }

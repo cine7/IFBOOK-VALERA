@@ -22,8 +22,8 @@ namespace IFBOOK_VALERA.Models
         [Display(Name = "Matrícula")]
         public string Matricula { get; set; }
         
-        public ICollection<Publicacao> publicacao { get; set; }
+        public ICollection<Publicacao> Publicacoes { get; set; }
 
-        public ICollection<Comentario> comentario { get; set; }
+        public ICollection<Comentario> Comentarios { get; set; }
     }
 }
